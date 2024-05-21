@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My CV - Galeri</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <style>
+    .navbar-sea-blue {
+      background-color: #f5037c; 
+    }
+    body {
+      font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: url(https://wallpaperaccess.com/full/368766.jpg) no-repeat center center fixed;
+      background-size: cover;
+    }
+    .container {
+      max-width: 960px;
+      margin: 60px auto;
+      padding: 0 15px;
+      flex: 1;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .row {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: justify;
+    }
+    .col {
+      padding: 20px;
+      text-align: justify;
+      font-size: 18px;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #db165e;
+      color: white;
+      border-top: 1px solid #ddd;
+      margin-top: auto;
+    }
+    .footer-left {
+      font-size: 14px;
+    }
+    .footer-right img {
+      width: 30px;
+      height: 30px;
+      margin-left: 10px;
+      filter: invert(100%);
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .gallery-item {
+      margin: 15px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .gallery-item img,
+    .gallery-item video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5em;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-sea-blue">
+    <a class="navbar-brand" href="#">CV Rizqulloh Akbar</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tentang.html">Tentang</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="skills.html">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="project.html">Projects</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="galeri.html">Galeri</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontak.html">Kontak</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>Kumpulan Video dan Foto </h1>
+        <div class="gallery">
+          <div class="gallery-item">
+            <img src="D:\DOKUMEN KULIAH\Dokumen akbar\1.jpg" alt="Foto Kesukaan 1">
+            <p>Foto  1</p>
+          </div>
+          <div class="gallery-item">
+            <img src="https://www.droneboy.com/wordpress/wp-content/uploads/2020/08/DSC06504-2.jpg" alt="Drone Image" alt="Foto Kesukaan 2">
+            <p>Foto  2</p>
+          </div>
+          <div class="gallery-item">
+            <iframe width="300" height="200" src="C:\xampp\htdocs\video1.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Video 1</p>
+          </div>
+          <div class="gallery-item">
+            <iframe width="300" height="200" src="D:\DOKUMEN KULIAH\Dokumen akbar\Video WhatsApp 2024-05-11 pukul 13.46.38_fbb7db7e.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Video 2</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-left">
+      &copy; 2024 by Rizqulloh Akbar
+    </div>
+    <div class="footer-right">
+      <a href="https://www.instagram.com/muzaki.mu?igsh=MWdjdjhmYTJpZXlqaQ==" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+      </a>
+      <a href="https://wa.me/6281330321966" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+      </a>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
